@@ -1,13 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portifólio - Refatorando</title>
-        <link rel="icon" href="public/images/logo-refatorando.png" type="image/x-icon">
-        <link rel="stylesheet" href="public/css/styles.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio - Refatorando</title>
+    <link
+      rel="icon"
+      href="public/images/logo-refatorando.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="public/css/styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <nav>
+          <img src="./public/images/logo-refatorando.png" height="40" />
+          <ul>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#habilidades">HABILIDADES</a></li>
+            <li><a href="#sobre">SOBRE</a></li>
+            <li><a href="#projetos">PROJETOS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+          </ul>
+          <img id="menu-hamburger" src="./public/images/icon-menu.svg" height="40" />
+        </nav>
+      </header>
+      <div id="banner">
+        <div id="banner-shadow"></div>
+        <h1>JOÃO SILVA</h1>
+      </div>
+      <div id="info">`
+        <div id="sobre">
+          <div class="title">Sobre Mim</div>
+          <p>
+            Sou um desenvolvedor Fullstack com habilidades abrangentes em
+            desenvolvimento web fullstack.
+          </p>
+          <p>
+            Com mais de 10 anos de experiência já trabalhei em empresas como
+            Empresa A, Empresa B e Empresa C.
+          </p>
+          <p>
+            Sou capaz de entregar projetos de alta qualidade que abrangem tanto
+            o front-end quanto o back-end, garantindo excelência em todas as
+            etapas do desenvolvimento.
+          </p>
+          <div id="social">
+            <a href="#"><img src="./public/images/icon-github.png" alt="" /></a>
+            <a href="#"
+              ><img src="./public/images/icon-linkedin.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./public/images/icon-instagram.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div id="habilidades">
+          <div id="resumo">
+            <h3>Desenvolvedor Fullstack</h3>
+            <p>
+              Com expertise Fullstack, proporciono projetos de alta qualidade,
+              abrangendo front-end e back-end.
+            </p>
+            <a href="#contato">Entrar em contato</a>
+          </div>
+          <h3>Habilidades</h3>
+          <div class="tecnologias">
+            <img src="./public/images/icon-html5.png" />
+            <div>
+              <span>HTML</span>
+              <div class="bar">
+                <div style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tecnologias">
+            <img src="./public/images/icon-css3.png" />
+            <div>
+              <span>CSS</span>
+              <div class="bar">
+                <div style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tecnologias">
+            <img src="./public/images/icon-javascript.png" />
+            <div>
+              <span>Javascript</span>
+              <div class="bar">
+                <div style="width: 95%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tecnologias">
+            <img src="./public/images/icon-git.png" />
+            <div>
+              <span>Git & Github</span>
+              <div class="bar">
+                <div style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tecnologias">
+            <img src="./public/images/icon-typescript.png" />
+            <div>
+              <span>Typescript</span>
+              <div class="bar">
+                <div style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tecnologias">
+            <img src="./public/images/icon-tailwind.png" />
+            <div>
+              <span>Tailwind</span>
+              <div class="bar">
+                <div style="width: 45%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tecnologias">
+            <img src="./public/images/icon-node.png" />
+            <div>
+              <span>Node.js</span>
+              <div class="bar">
+                <div style="width: 96%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="projetos">
+        <div class="title">Projetos</div>
+        <div id="galeria_projetos">
+          <a href="#">
+            <img src="./public/images/projetos-login.png" alt="Projeto 1" />
+          </a>
+          <a href="#">
+            <img src="./public/images/projetos-todo-List.png" alt="Projeto 2" />
+          </a>
+          <a href="#">
+            <img src="./public/images/projetos-nft.png" alt="Projeto 3" />
+          </a>
+          <a href="#">
+            <img
+              src="./public/images/projetos-agendamento.png"
+              alt="Projeto 4"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="./public/images/projetos-plataforma.png"
+              alt="Projeto 5"
+            />
+          </a>
+          <a href="#">
+            <img src="./public/images/projetos-ecommerce.png" alt="Projeto 6" />
+          </a>
+        </div>
+      </div>
+      <div id="contato">
+        <div class="title">Contato</div>
+        <div id="container_formulario">
+          <h4>Envie uma mensagem:</h4>
+          <form>
+            <input type="text" placeholder="Nome*" />
+            <input type="text" placeholder="Número do celular" />
+            <input type="text" placeholder="E-mail" />
+            <textarea placeholder="Mensagem*"></textarea>
+            <div>
+              <input type="submit" value="Enviar Mensagem" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

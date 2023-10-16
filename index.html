@@ -10,6 +10,17 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="public/css/styles.css" />
+    <script>
+      function showMenu() {
+        let menu = document.querySelector("nav").querySelector("ul");
+
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="container">
@@ -23,14 +34,19 @@
             <li><a href="#projetos">PROJETOS</a></li>
             <li><a href="#contato">CONTATO</a></li>
           </ul>
-          <img id="menu-hamburger" src="./public/images/icon-menu.svg" height="40" />
+          <img
+            id="menu-hamburger"
+            onclick="showMenu()"
+            src="./public/images/icon-menu.svg"
+            height="40"
+          />
         </nav>
       </header>
       <div id="banner">
         <div id="banner-shadow"></div>
         <h1>JOÃO SILVA</h1>
       </div>
-      <div id="info">`
+      <div id="info">
         <div id="sobre">
           <div class="title">Sobre Mim</div>
           <p>

@@ -382,11 +382,26 @@ h4 {
   nav {
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
   }
 
   nav > ul {
+    flex-direction: column;
     display: none;
+    padding: 0px;
   }
+
+  nav > ul > li {
+    font-size: 18px;
+    margin: 10px;
+    text-decoration: none;
+    display: block;
+  }
+
+  nav :nth-child(1) { order: 1; }
+  nav :nth-child(2) { order: 3; }
+  nav :nth-child(3) { order: 2; }
 
   #habilidades {
     margin: 20px;
